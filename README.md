@@ -308,7 +308,7 @@ Through this project I learned:
 
 B.Tech Student | IoT Developer | Embedded Systems Enthusiast
 
-GitHub: https://github.com/YOUR_USERNAME
+
 
 ---
 
