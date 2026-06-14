@@ -202,39 +202,37 @@ Smart-Home-Energy-Monitoring-System
 ```
 
 ---
-
 ## 📷 Screenshots
 
-### ESP32 Circuit
+### 🖥️ Simulation
 
-Add image here:
+![Simulation](dashboard/simulation.png.png)
 
-```text
-images/circuit.png
-```
+---
 
-### OLED Display
+### 📊 Node-RED Dashboard
 
-Add image here:
+![Dashboard](dashboard/dashboard_1.png.png)
 
-```text
-images/oled_display.png
-```
+---
 
-### Node-RED Flow
+### 📈 Dashboard Analytics
 
-Add image here:
+![Analytics](dashboard/ashboard_2.png)
 
-```text
-images/node_red_flow.png
-```
+---
 
-### Dashboard
+### 🔄 Live Energy Monitoring
 
-Add image here:
+![Live Reading](dashboard/live_reading.png)
 
-```text
-images/dashboard.png
+---
+
+### 🔗 Node-RED Flow
+
+![Node-RED Flow](dashboard/node_red.png)
+
+
 ```
 
 ---
