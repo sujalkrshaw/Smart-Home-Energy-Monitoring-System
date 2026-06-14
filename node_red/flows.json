@@ -1,0 +1,497 @@
+[
+    {
+        "id": "f927f2c2a059b663",
+        "type": "tab",
+        "label": "Smart Home Energy Monitor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5e9b89b99679664b",
+        "type": "ui_gauge",
+        "z": "f927f2c2a059b663",
+        "name": "",
+        "group": "5c11fbc5164b8127",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power",
+        "label": "W",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1500",
+        "colors": [
+            "#2f922f",
+            "#fbfb7e",
+            "#e26f6f"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "385a5b6ac753ec99",
+        "type": "ui_gauge",
+        "z": "f927f2c2a059b663",
+        "name": "",
+        "group": "5c11fbc5164b8127",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cd55cea02121222d",
+        "type": "ui_gauge",
+        "z": "f927f2c2a059b663",
+        "name": "",
+        "group": "5c11fbc5164b8127",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Voltage",
+        "label": "V",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "250",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "ed0120a497d535d8",
+        "type": "ui_text",
+        "z": "f927f2c2a059b663",
+        "group": "5c11fbc5164b8127",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Energy Used",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3345ddfd2a7d5c8d",
+        "type": "ui_text",
+        "z": "f927f2c2a059b663",
+        "group": "5c11fbc5164b8127",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Electricity Cost",
+        "format": "₹ {{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 780,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2085e8dbfe9a782a",
+        "type": "ui_text",
+        "z": "f927f2c2a059b663",
+        "group": "5c11fbc5164b8127",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alert Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": 16,
+        "color": "#ffffff",
+        "x": 770,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "55f5b9f2512eb5c3",
+        "type": "ui_chart",
+        "z": "f927f2c2a059b663",
+        "name": "",
+        "group": "5c11fbc5164b8127",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Live Power Trend",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4725661556207a2",
+        "type": "debug",
+        "z": "f927f2c2a059b663",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6dbd90527ef012f6",
+        "type": "mqtt in",
+        "z": "f927f2c2a059b663",
+        "name": "",
+        "topic": "sujal/home/energy",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9173674e0f8d925f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "3f99ef262f7d78fe",
+                "78d79bd740b6a0ca",
+                "9122c6e91a077ee8",
+                "0f4f400d11dac8f5"
+            ]
+        ]
+    },
+    {
+        "id": "3f99ef262f7d78fe",
+        "type": "json",
+        "z": "f927f2c2a059b663",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 480,
+        "wires": [
+            [
+                "f3578362c9960a88",
+                "a4725661556207a2"
+            ]
+        ]
+    },
+    {
+        "id": "f3578362c9960a88",
+        "type": "function",
+        "z": "f927f2c2a059b663",
+        "name": "Split Data",
+        "func": "var voltage = {\n    payload: msg.payload.voltage\n};\n\nvar current = {\n    payload: msg.payload.current\n};\n\nvar power = {\n    payload: msg.payload.power\n};\n\nvar energy = {\n    payload: msg.payload.energy\n};\n\nvar cost = {\n    payload: msg.payload.cost\n};\n\nvar alert = {\n    payload: msg.payload.alert\n};\n\nreturn [voltage,current,power,energy,cost,alert];",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "cd55cea02121222d"
+            ],
+            [
+                "385a5b6ac753ec99"
+            ],
+            [
+                "5e9b89b99679664b",
+                "55f5b9f2512eb5c3",
+                "8acc9679ac827dd1"
+            ],
+            [
+                "ed0120a497d535d8"
+            ],
+            [
+                "3345ddfd2a7d5c8d"
+            ],
+            [
+                "6c7eeca428d30607"
+            ]
+        ]
+    },
+    {
+        "id": "78d79bd740b6a0ca",
+        "type": "debug",
+        "z": "f927f2c2a059b663",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "59176267acb730a4",
+        "type": "ui_toast",
+        "z": "f927f2c2a059b663",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1300,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8acc9679ac827dd1",
+        "type": "switch",
+        "z": "f927f2c2a059b663",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "1000",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 200,
+        "wires": [
+            [
+                "7c326703522dc9c8"
+            ]
+        ]
+    },
+    {
+        "id": "7c326703522dc9c8",
+        "type": "function",
+        "z": "f927f2c2a059b663",
+        "name": "function 2",
+        "func": "msg.payload = \"⚠ CRITICAL POWER USAGE DETECTED!\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            [
+                "59176267acb730a4"
+            ]
+        ]
+    },
+    {
+        "id": "6c7eeca428d30607",
+        "type": "function",
+        "z": "f927f2c2a059b663",
+        "name": "function 3",
+        "func": "if(msg.payload === \"NORMAL\"){\n\n    msg.payload =\n    \"<span style='color:lime;font-weight:bold'>🟢 NORMAL</span>\";\n\n}\n\nelse if(msg.payload === \"HIGH_USAGE\"){\n\n    msg.payload =\n    \"<span style='color:orange;font-weight:bold'>🟠 HIGH_USAGE</span>\";\n\n}\n\nelse if(msg.payload === \"CRITICAL\"){\n\n    msg.payload =\n    \"<span style='color:red;font-weight:bold'>🔴 CRITICAL</span>\";\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "2085e8dbfe9a782a"
+            ]
+        ]
+    },
+    {
+        "id": "9122c6e91a077ee8",
+        "type": "ui_text",
+        "z": "f927f2c2a059b663",
+        "group": "5c11fbc5164b8127",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status",
+        "format": "🟢 ONLINE",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 290,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0f4f400d11dac8f5",
+        "type": "ui_text",
+        "z": "f927f2c2a059b663",
+        "group": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "🏠 Smart Home Energy Monitoring System",
+        "format": "ESP32 + MQTT + Node-RED",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 270,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5c11fbc5164b8127",
+        "type": "ui_group",
+        "name": "Smart Home Energy",
+        "tab": "490add665f7aca30",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9173674e0f8d925f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "490add665f7aca30",
+        "type": "ui_tab",
+        "name": "Energy Monitor",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1ecf1fa64b866aa4",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]

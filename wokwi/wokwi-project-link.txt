@@ -1,0 +1,27 @@
+Smart Home Energy Monitoring System
+
+Wokwi Simulation Link:
+https://wokwi.com/projects/466734979370058753
+
+Project Description:
+This project is an IoT-based Smart Home Energy Monitoring System developed using ESP32, MQTT, Node-RED Dashboard, and OLED Display.
+
+Features:
+
+* Real-time Voltage Monitoring
+* Real-time Current Monitoring
+* Power Consumption Tracking
+* Energy Usage Calculation
+* Electricity Cost Estimation
+* Live Dashboard Visualization
+* MQTT Communication
+* Alert Notifications for High Power Usage
+
+Technology Stack:
+
+* ESP32
+* MQTT
+* Node-RED
+* Arduino IDE
+* Wokwi Simulator
+* OLED SSD1306 Display

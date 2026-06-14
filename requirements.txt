@@ -1,0 +1,8 @@
+ESP32
+MQTT
+Node-RED
+Node-RED Dashboard
+OLED SSD1306
+PubSubClient
+Adafruit GFX
+Adafruit SSD1306
